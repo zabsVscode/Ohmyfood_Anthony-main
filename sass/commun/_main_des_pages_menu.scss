@@ -1,0 +1,561 @@
+
+.picture_menu {
+    width: 100%;
+    height: 275px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: 0%;
+}
+
+.title_menu{
+    width: 100%;
+    height: 74px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+    position: absolute;
+
+    margin-top: -74px;
+    background: #F6F6F6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+    }
+
+    .fa-regular {
+    height: 33px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+        
+    }
+    
+    .fa-regular {
+    transition: all 1s ease-out;
+    }
+    
+    .fa-regular:hover {
+        color:$color-button-icon;
+        font-weight:900; 
+    }
+
+.menu_column {
+    width: 100%;
+    
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background:$second-color;
+
+    .icon {
+        display:none;
+    }
+
+    .icon_box {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 12%;
+        gap: 12px;
+        margin-left: 72.5%;
+        margin-top: -32px;
+
+        .icon_box--price {
+            display: flex;
+            width: 18px;
+            height:18px;
+            margin-bottom: 13px;
+            margin-right: -6px;
+    
+            color: #353535;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .entries_menu_height360px {
+        width:90%;
+        height:360px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;  
+    }
+
+    .entries_menu {
+        width:90%;
+        height:270px;
+            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;  
+    }
+
+    .entries_title {
+        display: flex;
+        width: 41px;
+        height: 27px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-bottom: 4px solid;
+        border-color: #99E2D0;;
+
+    }
+
+    .entries_card {
+        
+        width: 97%;
+        height: 59px;
+        padding: 9px;
+        
+
+        border-radius: 15.043px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+
+        .entries_card--text {
+        width:auto;
+        height: 21px;
+        flex-shrink: 0;
+        align-self: stretch;
+
+        
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+
+        .entries_card--secondtext {
+            width: auto;
+            height: 36px;
+            
+
+            display: flex;
+            justify-content: space-between;
+
+            padding-right: 10px;
+            padding-top: 12px;
+
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 14.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+    }
+
+    .flat_menu {
+        width:90%;
+        height:270px;
+            
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;  
+    }
+
+    .flat_title {
+        display: flex;
+        width: 41px;
+        height: 27px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-bottom: 4px solid;
+        border-color: #99E2D0;;
+
+    }
+
+    .flat_card {
+        
+        width: 97%;
+        height: 59px;
+        padding: 9px;
+        
+
+        border-radius: 15.043px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+
+        .flat_card--text {
+        width:auto;
+        height: 21px;
+        flex-shrink: 0;
+        align-self: stretch;
+
+        
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+
+        .flat_card--price {
+            width:18px;
+            height:18px;
+
+            padding-left: 273px;
+
+
+        color: #353535;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15.043px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        }
+
+        .flat_card--secondtext {
+            width: auto;
+            height: 36px;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding-right: 10px;
+            padding-top: 12px;
+
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 14.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    
+    
+        .desserts_menu {
+            width:90%;
+            height:270px;
+                
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;  
+        }
+    
+        .desserts_title {
+            display: flex;
+            width: 41px;
+            height: 27px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+    
+            border-bottom: 4px solid;
+            border-color: #99E2D0;;
+    
+        }
+    
+        .desserts_card {
+            
+            width: 97%;
+            height: 59px;
+            padding: 9px;
+            border-radius: 15.043px;
+            background: var(--White, #FFF);
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+        
+            .desserts_card--text {
+            width:auto;
+            height: 21px;
+            flex-shrink: 0;
+            align-self: stretch;
+        
+            
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            }
+        
+            .desserts_card--price {
+            width:18px;
+            height:18px;
+        
+            padding-left: 273px;
+        
+        
+            color: #353535;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            }
+        
+            .desserts_card--secondtext {
+            width: auto;
+            height: 36px;
+            z-index: 2;
+            position: relative;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding-right: 10px;
+            padding-top: 12px;
+
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: Roboto;
+            font-size: 14.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            }
+        }
+
+
+}
+
+    .order_button {
+        width: 186px;
+        height: 50px;
+        flex-shrink: 0;
+    
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    
+        margin-top: 2%;
+        margin-bottom: 7%;
+        
+        
+        border-radius: 25px;
+        background: $search-button-gradient;
+    
+        
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .order_button:hover{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        opacity:0.80;
+        cursor:pointer;
+    }
+
+    .order_buttontext {
+        color: $main-color;
+
+
+
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        
+    }
+
+@media (min-width: 1024px) {
+
+    @keyframes slideInLeft {
+        from {
+            transform:translateX(-300px);
+        }
+        to {
+            transform:translateX(0);
+        }
+        }
+        
+
+    .menu_column {
+        width: 75%;
+        height: 1116px;
+        padding-top: 51px;
+        padding-bottom: 54px;
+        padding-left: 54px;
+        padding-right: 54px;
+        display: inline-flex;
+        align-items: center;
+        gap: 40px;
+        margin-left: 125px;
+        background: #F6F6F6;
+
+         .entries_menu {
+            width: 90%;
+            height: 479px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none;
+
+       
+        }
+
+        .flat_menu {
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0.25s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none;
+
+        
+
+        }
+
+        .desserts_menu {
+        animation-name : slideInLeft;
+        animation-duration:1s;
+        animation-timing-function:ease-in;
+        animation-delay:0.50s;
+        animation-iteration-count:1;
+        animation-direction:normal;
+        animation-fill-mode:none;
+        }
+
+        .title_menu {
+            width: 75%;
+            padding-left: 54px;
+            padding-right: 54px;
+            height:51px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            position: absolute;
+
+            margin-top: -100px;
+            padding-top: 28px;
+
+            background: #F6F6F6;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            color: var(--Black, #101010);
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .icon_box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+
+            
+            width: 12%;
+            gap:12px;
+            margin-left: 54.5%;
+            margin-top: -78px;
+            position: absolute;
+        }
+
+
+        .icon {
+            opacity: 0;
+            
+            height: 80px;
+            
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            transition: transform 0.3s ease; 
+
+            color: $second-color;
+            font-size: larger;
+
+        }
+
+        .icon:hover {
+            opacity: 1;
+            width: 70px;
+            height: 77px;
+            gap:14px;
+            z-index:3;
+
+            background:#99E2D0; 
+
+            transform: translateX(-0px);
+        }
+
+        .icon_box--price {
+            padding-right: 11px;
+        }
+
+        .entries_card--secondtext .flat_card--secondtext .desserts_card--secondtext {
+            z-index:2;
+            position: relative;
+        }
+
+    }
+
+    
+    }
+
+    
+
+
+
+
