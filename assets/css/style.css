@@ -177,8 +177,13 @@ header .header_location .header_icon-location {
   font-weight: 300;
   line-height: normal;
 }
+.search .button_category {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+}
 .search .search_button {
-  width: 218px;
+  width: 116%;
   height: 50px;
   flex-shrink: 0;
   display: flex;
@@ -196,8 +201,8 @@ header .header_location .header_icon-location {
   cursor: pointer;
 }
 .search .search_buttontext {
-  width: 180px;
-  height: 24px;
+  width: auto;
+  height: auto;
   color: #FFFFFF;
   text-decoration: none;
   font-family: Roboto;
@@ -205,6 +210,9 @@ header .header_location .header_icon-location {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fonctionnement {
