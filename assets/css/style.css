@@ -418,7 +418,7 @@ header .header_location .header_icon-location {
   display: block;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1415px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .fonctionnement {
     width: 94%;
     height: auto;
@@ -495,13 +495,17 @@ header .header_location .header_icon-location {
     cursor: pointer;
   }
 }
-@media (min-width: 1416px) {
+@media (min-width: 1025px) {
   .main-container {
     width: 100%;
     padding: 0;
     margin: 0;
   }
+  .header .header_location {
+    width: 112%;
+  }
   .search {
+    width: 106%;
     padding-bottom: 33px;
   }
   .search .search_title {
@@ -543,30 +547,29 @@ header .header_location .header_icon-location {
     height: 31px;
   }
   .restaurants {
-    width: auto;
+    width: 79%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 28px;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-right: 180px;
-    padding-left: 168px;
-    align-self: stretch;
+    padding-right: 100px;
+    padding-left: 180px;
   }
   .restaurants .restaurants__title {
     width: 268.718px;
+    padding-left: 9px;
   }
   .restaurants .restaurants__column {
-    width: 100%;
     height: auto;
     flex-wrap: wrap;
     padding-top: 23px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 100px;
     align-self: stretch;
   }
   .restaurants .restaurants__column .restaurant__column--label-new {
@@ -575,7 +578,6 @@ header .header_location .header_icon-location {
     height: 29px;
   }
   .restaurants .restaurants__column .restaurants__column--card {
-    width: 45%;
     height: 251px;
     display: flex;
     flex-direction: column;
