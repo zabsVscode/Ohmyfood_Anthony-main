@@ -505,7 +505,7 @@ transition: all 1s ease-out;
         gap: 25px;
 
         .fonctionnement__filter {
-            width: 100%;
+            width: 106%;
             height: auto;
             flex-wrap: wrap;
             flex-direction: row;
@@ -525,19 +525,18 @@ transition: all 1s ease-out;
         }
     
         .restaurants {
-            width: 79%;
+            width: 106%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 28px;
             padding-bottom: 30px;
             padding-top: 30px;
-            padding-right: 100px;
-            padding-left: 180px;
+            
     
             .restaurants__title {
                 width: 268.718px;
-                padding-left: 9px;
+                padding-left: 180px;
             }
     
             .restaurants__column {
@@ -550,7 +549,9 @@ transition: all 1s ease-out;
                 align-items: center;
                 justify-content: center;
                 align-self: stretch;
-    
+                padding-right: 180px;
+                padding-left: 180px;
+
                 .restaurant__column--label-new {
                     top: 43px;
                     right: 23.41px;

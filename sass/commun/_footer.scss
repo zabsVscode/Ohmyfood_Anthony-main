@@ -65,11 +65,11 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
     .footer {
         display: flex;
-        width: auto;
+        width: 100%;
         height: 70px;
         padding: 30px 25px;
         flex-direction:row-reverse;
