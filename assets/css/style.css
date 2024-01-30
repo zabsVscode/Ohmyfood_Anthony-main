@@ -792,34 +792,37 @@ header .header_location .header_icon-location {
   align-items: center;
   gap: 40px;
   background: #F6F6F6;
-}
-.menu_column .icon {
-  display: none;
-}
-.menu_column .icon_box {
-  position: absolute;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: row;
-  width: 12%;
-  gap: 12px;
-  margin-left: 72.5%;
-  margin-top: -32px;
-}
-.menu_column .icon_box .icon_box--price {
-  display: flex;
-  width: 18px;
-  height: 18px;
-  margin-bottom: 13px;
-  margin-right: -6px;
-  color: #353535;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  /*.icon {
+      display:none;
+  }
+
+  .icon_box {
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: row;
+      width: 12%;
+      gap: 12px;
+      margin-left: 72.5%;
+      margin-top: -32px;
+
+      .icon_box--price {
+          display: flex;
+          width: 18px;
+          height:18px;
+          margin-bottom: 13px;
+          margin-right: -6px;
+
+          color: #353535;
+          text-align: center;
+          font-family: Roboto;
+          font-size: 15.043px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+      }
+  }*/
 }
 .menu_column .entries_menu_height360px {
   width: 90%;
@@ -850,7 +853,10 @@ header .header_location .header_icon-location {
 .menu_column .entries_card {
   width: 97%;
   height: 59px;
-  padding: 9px;
+  padding-right: 0px;
+  padding-left: 9px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border-radius: 15.043px;
   background: var(--White, #FFF);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
@@ -871,8 +877,6 @@ header .header_location .header_icon-location {
   line-height: normal;
 }
 .menu_column .entries_card .entries_card--secondtext {
-  width: auto;
-  height: 36px;
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
@@ -886,6 +890,40 @@ header .header_location .header_icon-location {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+.menu_column .entries_card .entries_card--checkprice {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  margin-top: -39px;
+  margin-right: -1px;
+  position: relative;
+  bottom: 20px;
+}
+.menu_column .entries_card .icon_box--price {
+  padding-right: 11px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu_column .entries_card .entries_card_check {
+  height: 77px;
+  flex-shrink: 0;
+  background: #99E2D0;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: all 1s;
+}
+.menu_column .entries_card:active .entries_card_check {
+  margin-right: 1px;
+}
+.menu_column .entries_card .fa-circle-check {
+  color: #FFF;
+  font-size: 19px;
 }
 .menu_column .flat_menu {
   width: 90%;
@@ -1099,7 +1137,43 @@ header .header_location .header_icon-location {
     animation-direction: normal;
     animation-fill-mode: none;
   }
+  .menu_column .entries_menu .entries_card {
+    padding-right: 0;
+  }
+  .menu_column .entries_menu .entries_card--checkprice {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-top: -59px;
+    margin-right: -1px;
+    position: static;
+  }
+  .menu_column .entries_menu .entries_card--checkprice .entries_card_check {
+    height: 77px;
+    flex-shrink: 0;
+    background: #99E2D0;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-right: -4rem;
+    width: 4rem;
+    transition: all 1s;
+  }
+  .menu_column .entries_menu .entries_card--checkprice:hover .entries_card_check {
+    margin-right: 1px;
+  }
+  .menu_column .entries_menu .entries_card--checkprice .fa-circle-check {
+    color: #FFF;
+    font-size: 19px;
+  }
   .menu_column .flat_menu {
+    width: 90%;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
     animation-name: slideInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -1107,6 +1181,36 @@ header .header_location .header_icon-location {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
+  }
+  .menu_column .flat_menu .flat_card {
+    padding-right: 0;
+  }
+  .menu_column .flat_menu .flat_card--checkprice {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-top: -78px;
+    margin-right: -1px;
+    position: static;
+  }
+  .menu_column .flat_menu .flat_card--checkprice .flat_card_check {
+    height: 77px;
+    flex-shrink: 0;
+    background: #99E2D0;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-right: -4rem;
+    width: 4rem;
+    transition: all 1s;
+  }
+  .menu_column .flat_menu .flat_card--checkprice:hover .flat_card_check {
+    margin-right: 1px;
+  }
+  .menu_column .flat_menu .flat_card--checkprice .fa-circle-check {
+    color: #FFF;
+    font-size: 19px;
   }
   .menu_column .desserts_menu {
     animation-name: slideInLeft;
@@ -1116,6 +1220,36 @@ header .header_location .header_icon-location {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
+  }
+  .menu_column .desserts_menu .desserts_card {
+    padding-right: 0;
+  }
+  .menu_column .desserts_menu .desserts_card--checkprice {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-top: -78px;
+    margin-right: -1px;
+    position: static;
+  }
+  .menu_column .desserts_menu .desserts_card--checkprice .desserts_card_check {
+    height: 77px;
+    flex-shrink: 0;
+    background: #99E2D0;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-right: -4rem;
+    width: 4rem;
+    transition: all 1s;
+  }
+  .menu_column .desserts_menu .desserts_card--checkprice:hover .desserts_card_check {
+    margin-right: 1px;
+  }
+  .menu_column .desserts_menu .desserts_card--checkprice .fa-circle-check {
+    color: #FFF;
+    font-size: 19px;
   }
   .menu_column .title_menu {
     width: 75%;
@@ -1173,6 +1307,9 @@ header .header_location .header_icon-location {
   }
   .menu_column .icon_box--price {
     padding-right: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   .menu_column .entries_card--secondtext .flat_card--secondtext .desserts_card--secondtext {
     z-index: 2;

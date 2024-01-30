@@ -59,7 +59,7 @@
     gap: 40px;
     background:$second-color;
 
-    .icon {
+    /*.icon {
         display:none;
     }
 
@@ -89,7 +89,7 @@
             font-weight: 700;
             line-height: normal;
         }
-    }
+    }*/
 
     .entries_menu_height360px {
         width:90%;
@@ -128,7 +128,10 @@
         
         width: 97%;
         height: 59px;
-        padding: 9px;
+        padding-right: 0px;
+        padding-left: 9px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         
 
         border-radius: 15.043px;
@@ -152,11 +155,9 @@
         font-weight: 500;
         line-height: normal;
         }
+        
 
         .entries_card--secondtext {
-            width: auto;
-            height: 36px;
-            
 
             display: flex;
             justify-content: space-between;
@@ -175,7 +176,51 @@
             line-height: normal;
         }
 
+        .entries_card--checkprice {
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+            margin-top: -39px;
+            margin-right: -1px;
+
+            position: relative;
+            bottom: 20px;
+        }
+        .icon_box--price {
+            padding-right: 11px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .entries_card_check {
+            height: 77px;
+            flex-shrink: 0;
+            background:#99E2D0;
+
+            display: grid;
+            place-items:center;
+
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+
+            margin-right: -4rem;
+            width: 4rem;
+
+            transition: all 1s;
+        }
+
+        &:active .entries_card_check {
+            margin-right:1px;
+        }
+
+        .fa-circle-check {
+            color: $color-circle-check;
+            font-size: 19px;
+        }   
     }
+
+
 
     .flat_menu {
         width:90%;
@@ -447,12 +492,58 @@
         animation-direction:normal;
         animation-fill-mode:none;
 
+        .entries_card {
+            padding-right: 0;
+        }
+        
+        .entries_card--checkprice {
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+
+            margin-top: -59px;
+            margin-right: -1px;
+
+            position: static;
+            .entries_card_check {
+                height: 77px;
+                flex-shrink: 0;
+                background:#99E2D0;
+
+                display: grid;
+                place-items:center;
+
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+
+                margin-right: -4rem;
+                width: 4rem;
+
+                transition: all 1s;
+        
+            }
+            &:hover .entries_card_check {
+                margin-right:1px;
+            }
+
+            .fa-circle-check {
+                color: $color-circle-check;
+                font-size: 19px;
+            }       
+        }
        
         }
 
         
 
         .flat_menu {
+            width: 90%;
+            height: 479px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+
         animation-name : slideInLeft;
         animation-duration:1s;
         animation-timing-function:ease-in;
@@ -461,7 +552,45 @@
         animation-direction:normal;
         animation-fill-mode:none;
 
+        .flat_card {
+            padding-right: 0;
+        }
+
+        .flat_card--checkprice {
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+
+            margin-top: -78px;
+            margin-right: -1px;
+
+            position: static;
+            .flat_card_check {
+                height: 77px;
+                flex-shrink: 0;
+                background:#99E2D0;
+
+                display: grid;
+                place-items:center;
+
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+
+                margin-right: -4rem;
+                width: 4rem;
+
+                transition: all 1s;
         
+            }
+            &:hover .flat_card_check {
+                margin-right:1px;
+            }
+
+            .fa-circle-check {
+                color: $color-circle-check;
+                font-size: 19px;
+            }       
+        }
 
         }
 
@@ -473,6 +602,47 @@
         animation-iteration-count:1;
         animation-direction:normal;
         animation-fill-mode:none;
+
+        .desserts_card {
+            padding-right: 0;
+           
+        }
+
+        .desserts_card--checkprice {
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+
+            margin-top: -78px;
+            margin-right: -1px;
+
+            position: static;
+            .desserts_card_check {
+                height: 77px;
+                flex-shrink: 0;
+                background:#99E2D0;
+
+                display: grid;
+                place-items:center;
+
+                border-top-right-radius: 13px;
+                border-bottom-right-radius: 13px;
+
+                margin-right: -4rem;
+                width: 4rem;
+
+                transition: all 1s;
+        
+            }
+            &:hover .desserts_card_check {
+                margin-right:1px;
+            }
+
+            .fa-circle-check {
+                color: $color-circle-check;
+                font-size: 19px;
+            }       
+        }
         }
 
         .title_menu {
@@ -548,7 +718,12 @@
 
         .icon_box--price {
             padding-right: 11px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
+
+       
 
         .entries_card--secondtext .flat_card--secondtext .desserts_card--secondtext {
             z-index:2;
