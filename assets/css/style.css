@@ -918,8 +918,8 @@ header .header_location .header_icon-location {
   width: 4rem;
   transition: all 1s;
 }
-.menu_column .entries_card:active .entries_card_check {
-  margin-right: 1px;
+.menu_column .entries_card:focus .entries_card_check {
+  outline: 2px solid blue;
 }
 .menu_column .entries_card .fa-circle-check {
   color: #FFF;

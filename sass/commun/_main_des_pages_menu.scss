@@ -210,8 +210,9 @@
             transition: all 1s;
         }
 
-        &:active .entries_card_check {
+        /*&:focus/active*/ .entries_card_check {
             margin-right:1px;
+            outline:
         }
 
         .fa-circle-check {
